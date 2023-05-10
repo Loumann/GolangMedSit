@@ -1,0 +1,93 @@
+
+body
+{
+    background-color: #edeef0;
+    margin: 0;
+    padding-top: 50px;
+
+}
+header{
+    top: 0;
+    z-index: 1400;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.im-right-menu {
+    position: fixed;
+   top: calc(var(--header-height) + var(--page-block-offset, 15px) - 15px);
+    margin-left: 565px;
+    width:  20px;
+    max-width: 20px;
+}
+
+.page_block {
+    background: #ffffff;
+    border-radius: 12px;
+    margin: 30px;
+    padding: 14px 37px 15px 48px;
+    width: 32%;
+}
+
+
+.page_block .select-baza
+{
+    color: rgb(207, 189, 189);
+    font-size: 10px;
+}
+
+.main-title .profile
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    max-width: 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0px;
+    color: rgb(141, 101, 182);
+    background-color: rgb(98, 182, 112);
+}
+
+.main-title 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.page_block_Analise
+{
+    background-color: white;
+    padding: 28px 9px 35px 39px;
+    height: 50px;
+    width: 40%;
+    float: right;
+    border-radius: 10px;
+    margin: -100px 40px;
+}
+
+.page_block .select-user
+{
+    font-size: 1rem;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0px;
+    border: 1px solid #e0e0e0;
+    color: var(--white2);
+    border-color: white;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.option
+{}

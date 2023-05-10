@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "SF";
+    src: url(/assets/css/Font/SFProText-Regular.ttf);
+}
+
+* {
+    font-family: "SF";
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 190px 9px;
+    background: #edeef1;
+}
+
+.screen-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    flex-direction: column;
+    border-radius: 30px;
+    gap: 3em;
+    padding: 3em;
+}
+
+input {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+    justify-content: center;
+    height: px;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    background-color: rgb(251 251 251);
+    border-radius: 8px;
+    
+}
+
+.screen-1 .Login .input-login {
+    font-size: px;
+
+}
+
+.screen-1 .password .input-pass {
+    font-size: 10px;
+    color: rebeccapurple;
+
+}
+
+.screen-1 .input-enter {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    padding: 8px 12px;
+    line-height: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-overflow: ellipsis;
+
+}
+
+
+.im-right-menu {
+    position: fixed;
+    top: calc(var(--header-height) + var(--page-block-offset, 15px) - 15px);
+    margin-left: 565px;
+    width: var(--narrow-column-width, 230px);
+    max-width: var(--narrow-column-width, 230px);
+}
+
+.page_block {
+    position: relative;
+    background: gray;
+    border-radius: 12px;
+    -webkit-box-shadow: var(--page-block-shadow);
+    box-shadow: var(--page-block-shadow);
+    margin: var(--page-block-offset, 15px) 0;
+}
+
+.screen-1.contol-grid-row {
+    row-gap: 10px;
+}
+
+label
+{
+    padding: 0 0 0 8px;
+    font-size: 12.5px;
+    display: flex;
+    flex-direction: column-reverse;
+    line-height: 1.25;
+}
+
+ .screen-1 .main-logo
+{
+    font-size: 15px;
+    padding: 30px;
+    margin-top: -20px;
+}
+
+
+.screen-1 .enter-button
+{
+    font-size: 10px;
+
+}
+.enter-button 
+{
+    
+    border: 1px solid #0091af;
+    background-color: white;
+    width: 130px;
+}
+
