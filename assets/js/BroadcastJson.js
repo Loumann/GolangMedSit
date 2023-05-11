@@ -1,5 +1,32 @@
+const btmEnt = document.querySelector('#btmEnter');
+btmEnt.onclick = SingIn;
+
 function SingIn() {
 	const elements = document.querySelectorAll("#SignInForm input[name]");
+	const label = document.querySelector("#SignInForm label");
+	const errorMessage = document.querySelector("#error-message");
+
+	const inName = document.querySelector('#inputUserPass');
+	const inLog = document.querySelector('#inputUserName');
+
+	btmEnt.onclick = () => {
+		if (inName.value.trim() === '' || inLog.value.trim() === '')
+		{
+			errorMessage.textContent = 'Необходимо заполнить все поля';
+			console.log('Inputs is null');
+		}
+		else if (xhr.status === 403)
+		{
+			errorMessage.textContent = '';
+			errorMessage.textContent = 'неверный логин/пароль';
+
+		}
+		else
+		{
+		}
+		btmEnt.onclick = SingIn;
+	};
+
 	const param = {};
 
 	elements.forEach(element => {
@@ -15,9 +42,13 @@ function SingIn() {
 			console.log(xhr.responseText);
 			console.log(xhr.status);
 
+
 		}
 	}
 	xhr.send(JSON.stringify(param));
+	errorMessage.textContent = '';
+	inName.textContent = '';
+	inLog.textContent = '';
 }
 
 const selectUser = document.querySelector("#SelectUser");

@@ -8,6 +8,7 @@
 }
 
 body {
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +24,7 @@ body {
     flex-direction: column;
     border-radius: 30px;
     gap: 3em;
-    padding: 3em;
+    padding: 2em;
 }
 
 input {
@@ -32,16 +33,15 @@ input {
     padding: 5px;
     cursor: pointer;
     justify-content: center;
-    height: px;
     outline: none;
     border: 1px solid #e0e0e0;
     background-color: rgb(251 251 251);
     border-radius: 8px;
-    
+
 }
 
 .screen-1 .Login .input-login {
-    font-size: px;
+    font-size: 100px;
 
 }
 
@@ -77,9 +77,6 @@ input {
     position: relative;
     background: gray;
     border-radius: 12px;
-    -webkit-box-shadow: var(--page-block-shadow);
-    box-shadow: var(--page-block-shadow);
-    margin: var(--page-block-offset, 15px) 0;
 }
 
 .screen-1.contol-grid-row {
@@ -108,11 +105,20 @@ label
     font-size: 10px;
 
 }
-.enter-button 
+.enter-button
 {
-    
+
     border: 1px solid #0091af;
     background-color: white;
     width: 130px;
 }
 
+.screen-1 .error-p
+{
+    font-size: 10px;
+    color: red;
+}
+.p
+{
+    font-size: 50px;
+}

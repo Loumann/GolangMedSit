@@ -4,13 +4,13 @@ import (
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
 	"log"
-
 	db "somename/DatabaseScripts"
 	"strconv"
 )
 
 func main() {
 	db.ConnectDB()
+	//db.ConnectDBCollege()
 
 	//вынести тоже в отдельный подфайл
 	router := gin.Default()
@@ -29,7 +29,7 @@ func main() {
 	log.Fatal(router.Run(":8080"))
 }
 
-//вынести структуры в подфайлы
+// вынести структуры в подфайлы
 type User struct {
 	Username string `json:"username"`
 	Password string `json:"password"`
